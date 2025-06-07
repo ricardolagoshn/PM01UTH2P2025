@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PM01UTH2P2025</string>
+    <string name="telefono">Telefono</string>
+    <string name="btnagregar">Agregar</string>
+    <string name="btncontactos">Ingreso de contactos</string>
+    <string name="btnlistacontactos">Lista Contactos</string>
+    <string name="btncombo">Seleccion de Contacto</string>
+</resources>
