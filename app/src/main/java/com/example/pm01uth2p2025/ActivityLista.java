@@ -3,8 +3,11 @@ package com.example.pm01uth2p2025;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,6 +42,17 @@ public class ActivityLista extends AppCompatActivity {
 
         ArrayAdapter adp = new ArrayAdapter(this, android.R.layout.simple_list_item_1, ArregloList);
         listapersonas.setAdapter(adp);
+
+
+        listapersonas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                String elementoseleccionado = (String) adapterView.getItemAtPosition(i);
+
+                Toast.makeText(getApplicationContext(), elementoseleccionado, Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 
